@@ -1,0 +1,13 @@
+
+<div class="inLine" *ngFor="let product of productList">
+    <div class="card small">
+        <div class="card-image">
+            <img class="photo" [src]="product?.photo" alt="Photo du produit {{product.name}}">
+        </div>
+        <div class="card-content">
+            <span class="card-title">{{product.name}}</span>
+            <span class="datepicker">Date d'expiration : {{product.expirationDate | date:'dd/MM/YYYY'}}</span>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "name": "Strepsil à l'orange",
+            "recordDate": "06/2024",
+            "expirationDate": "05/2025",
+            "forWho": "Chloé",
+            "case": "Mal à la gorge",
+            "whichDoctor": "Pharmacie",
+            "photo": "${this.baseUrl}/strepsilOrange.jpg",
+            "onPrecription": false
+        },
+        {
+            "id": 1,
+            "name": "Spasfon",
+            "recordDate": "04/2024",
+            "expirationDate": "05/2024",
+            "forWho": "Aurélie",
+            "case": "Mal au ventre",
+            "whichDoctor": "Dr BERT",
+            "photo": "${this.baseUrl}/spasfon.jpg",
+            "onPrecription": true
+        },
+        {
+            "id": 2,
+            "name": "Citrate de Bétaïne",
+            "recordDate": "02/2024",
+            "expirationDate": "04/2024",
+            "forWho": "Nicolas",
+            "case": "Mal au ventre",
+            "whichDoctor": "Pharmacie",
+            "photo": "${this.baseUrl}/citrate_betaine.jpg",
+            "onPrecription": false
+        }
+    ]
+}

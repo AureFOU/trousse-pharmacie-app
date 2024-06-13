@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PRODUCTS } from './mock-products.js';
+import { Product } from './product.js';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'trousse-pharmacie-app';
+  title = 'Ma trousse à pharmacie';
 }

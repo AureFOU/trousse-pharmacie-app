@@ -1,0 +1,18 @@
+.nav-wrapper{
+    background-color: #388e3c;
+    height: 6em;
+}
+
+.brand-logo{
+    margin-top: .5em;
+}
+
+.burgerMenu, .trousse{
+    height: 4.5em;
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.trousse{
+    margin-right: 2em;
+}

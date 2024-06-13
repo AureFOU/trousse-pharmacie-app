@@ -1,0 +1,17 @@
+
+.card{
+    float:left;
+    margin-left: 3%;
+}
+
+.small {
+    width:20%;
+}
+
+.card .card-image img{
+    width:100%;
+}
+
+.inline{
+    justify-content: space-around;
+}
