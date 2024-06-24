@@ -3,8 +3,8 @@ import { Product} from './product';
 export const PRODUCTS : Product[] = [
         {
             id: 0,
-            name: "Strepsil à l'orange",
-            recordDate: new Date(),
+            name: "Strepsils à l'orange",
+            recordDate: new Date('2024-05-28'),
             expirationDate: new Date('2025-05-01'),
             forWho: "Chloé",
             case: "Mal à la gorge",
@@ -15,7 +15,7 @@ export const PRODUCTS : Product[] = [
         {
             id: 1,
             name: "Spasfon",
-            recordDate: new Date(),
+            recordDate: new Date('2024-05-28'),
             expirationDate: new Date('2024-03-01'),
             forWho: "Aurélie",
             case: "Mal au ventre",
@@ -26,7 +26,7 @@ export const PRODUCTS : Product[] = [
         {
             id: 2,
             name: "Citrate de Bétaïne",
-            recordDate: new Date(),
+            recordDate: new Date('2024-05-28'),
             expirationDate: new Date('2023-12-01'),
             forWho: "Nicolas",
             case: "Mal au ventre",

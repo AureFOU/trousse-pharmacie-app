@@ -1,11 +1,13 @@
 
+<h1 style="margin-left: 20%;color:#1b5e20">Composition trousse à pharmacie</h1>
+
 <div class="inLine" *ngFor="let product of productList">
     <div class="card small">
         <div class="card-image">
             <img class="photo" [src]="product?.photo" alt="Photo du produit {{product.name}}">
         </div>
         <div class="card-content">
-            <span class="card-title">{{product.name}}</span>
+            <a routerLink="/detail/{{product.id}}"><span class="card-title">{{product.name}}</span></a>
             <span class="datepicker">Date d'expiration : {{product.expirationDate | date:'dd/MM/YYYY'}}</span>
 
         </div>

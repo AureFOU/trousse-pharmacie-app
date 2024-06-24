@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Product } from '../product.js';
 import { PRODUCTS } from '../mock-products.js';
 
@@ -9,6 +10,13 @@ import { PRODUCTS } from '../mock-products.js';
 })
 export class ProductsListComponent {
   productList : Product[] = PRODUCTS;
+  
+  constructor(private router:Router){
+    let productSelected: Product;
+  }
 
+  goToHome(){
+    this.router.navigate(['/home']);
+  }
 
 }
