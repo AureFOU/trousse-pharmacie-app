@@ -4,12 +4,14 @@ import { DetailProductComponent } from './detail-product/detail-product.componen
 import { ProductsListComponent } from './products-list/products-list.component.js';
 import { AppComponent } from './app.component.js';
 import { HomeComponent } from './home/home.component.js';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component.js';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'products', component: ProductsListComponent},
   { path: 'detail/:id', component: DetailProductComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({

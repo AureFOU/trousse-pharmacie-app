@@ -1,5 +1,22 @@
 <!-- Partie aperçu liste des produits -->
-<div class="ProductList">
-    <h1 style="margin-left: 20%;color:#1b5e20">Derniers produits ajoutés</h1>
-    <a routerLink="/products/">Voir tous les produits</a>
+<div class="LastProduct">
+    <h1 class="titleProduct">Dernier produit ajouté</h1>
+    <div class="row">
+        <div class="col s6 m4" style="margin-left:30%">
+          <div class="card">
+            <div class="card-image">
+                <img class="photo" [src]="product.photo" alt="Photo du produit {{product.name}}">
+            </div>
+            <div class="card-content">
+                <span class="card-title">{{product.name}}</span>
+                <span class="datepicker">Date d'enregistrement : {{product.recordDate| date:'dd/MM/YYYY'}}</span>
+            </div>
+            <div class="card-action">
+              <a href="/detail/{{product.id}}">Détail du produit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <a routerLink="/products/" style="margin-left:3%">Voir tous les produits</a>
 </div>

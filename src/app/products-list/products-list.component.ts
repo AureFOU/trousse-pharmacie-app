@@ -15,8 +15,8 @@ export class ProductsListComponent {
     let productSelected: Product;
   }
 
-  goToHome(){
-    this.router.navigate(['/home']);
+  goToProduct(product:Product){
+    this.router.navigate(['/detail/',product.id]);
   }
 
 }
