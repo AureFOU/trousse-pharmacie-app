@@ -4,10 +4,10 @@ import { Component } from '@angular/core';
   selector: 'app-page-not-found',
   template: `
     <div class='center' style="margin-top: 10%;">
-      <img src="./assets/img/valiseRouge.jpeg" style="width: 40%;" alt="Trousse pharmacie rouge">
-      <h1>Hey, cette page n'existe pas !</h1>
-      <a routerLink="/home" class="waves-effect waves-teal btn-flat">
-        Retourner à l' accueil
+      <img src="./assets/img/valiseRouge.jpeg" style="width: 30%;" alt="Trousse pharmacie rouge">
+      <h2 class="mt-4">Hey, cette page n'existe pas !</h2>
+      <a routerLink="/home" class="btn btn-link mt-3 mb-5 text-decoration-none" >
+        Retourner à l'accueil
       </a>
     </div>`,
   styles: []

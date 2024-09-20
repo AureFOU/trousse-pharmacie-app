@@ -9,3 +9,5 @@ export interface Product {
     photo: string;
     onPrecription: boolean;
 }
+
+export type ProductList = Product[];

@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { Product } from '../product.js';
 import { PRODUCTS } from '../mock-products.js';
+import { ProductService } from '../product.service.js';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +9,11 @@ import { PRODUCTS } from '../mock-products.js';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  productList : Product[] = PRODUCTS;
-  product: Product;
-
-  ngOnInit(){
-    this.productList.sort((a:Product, b:Product) => a.recordDate > b.recordDate?-1:1);
-    return this.product = this.productList[0];
-  }
+  private readonly productService = inject(ProductService);
+  readonly productList = signal(this.productService.getProductList());
+  // Récupération des 3 derniers produits renregistrés
+  readonly productListLastRecord = computed(() => {
+    this.productList().sort((a:Product, b:Product) => a.recordDate > b.recordDate?-1:1);
+    return this.productList().slice(0,3);
+  });
 }

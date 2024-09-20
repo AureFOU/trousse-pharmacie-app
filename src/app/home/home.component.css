@@ -1,5 +1,22 @@
 .titleProduct{
-    margin-left: 30%;
+    margin-top: 2%;
     font-size:3em;
     color:#1b5e20;
+}
+
+.productsList{
+    margin-left: 80%;
+    margin-bottom: 3%;
+}
+
+@media (max-width: 1000px){
+    .titleProduct{
+        margin-top: 2%;
+        font-size:2em;
+    }
+    .productsList{
+        margin-left: 65%;
+        margin-bottom: 4%;
+    }
+    
 }

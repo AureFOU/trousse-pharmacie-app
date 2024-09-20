@@ -1,19 +1,18 @@
-<nav>
-  <div class="nav-wrapper">
-    <img class="burgerMenu left" src="./assets/img/menuBurgerWhite.png" alt="Menu burger">
-    <a href="#" class="brand-logo center">{{title | uppercase }}</a>
-    <img class="trousse right" src="./assets/img/trousse-a-pharmacie.jpeg" alt="Icone trousse à pharmacie">
-  </div>
-</nav>
-
-<router-outlet></router-outlet>
-
-
-<footer>
-  <div class="row">
-    <div class="col s12" style="margin-left:40%">
-      <p>Aurélie Fougère © 2024<br>
-      Tous droits réservés</p>
+<nav class="green">
+  <div class="container">
+    <div class="row row-sols-xs-1">
+      <div class="col-md-3 col-sm-3 col-3">
+        <a  href="#">
+          <img class="pt-2 pb-2 imgTrousse" src="./assets/img/trousse-a-pharmacie.jpeg" alt="Icone trousse à pharmacie" width="60" height="80">
+        </a>
+      </div>
+      <div class="col-md-1 col-sm-1 col-1"></div>
+      <div class="col-md-6 col-sm-6 col-6">
+        <h1 class="header-title text-white mt-3" routerLink="/home">{{title | uppercase }}</h1>
+      </div>
     </div>
   </div>
-</footer>
+</nav>
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>

@@ -7,9 +7,9 @@ import { HomeComponent } from './home/home.component.js';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component.js';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent},
-  { path: 'products', component: ProductsListComponent},
-  { path: 'detail/:id', component: DetailProductComponent},
+  { path: 'home', component: HomeComponent,title:'Home'},
+  { path: 'products', component: ProductsListComponent, title:'Liste produits'},
+  { path: 'detail/:id', component: DetailProductComponent, title:'Produit'},
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: '**', component: PageNotFoundComponent}
 ];

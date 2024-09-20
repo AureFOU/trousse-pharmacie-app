@@ -1,24 +1,26 @@
-.nav-wrapper{
+.green{
     background-color: #388e3c;
-    height: 6em;
 }
 
-.brand-logo{
-    margin-top: .5em;
+h1{
+    cursor:pointer;
 }
 
-.burgerMenu, .trousse{
-    height: 4.5em;
-    margin-top: 1em;
-    margin-left: 2em;
+@media (max-width: 1000px){
+    .header-title{
+        font-size:2em;
+    }
+    .imgTrousse{
+        margin-top: 10%;
+    }
 }
 
-.trousse{
-    margin-right: 2em;
+@media (max-width: 576px){
+    .header-title{
+        font-size:1.3em;
+    }
+    .imgTrousse{
+        margin-top: 10%;
+    }
 }
 
-footer{
-    background-color: #388e3c;
-    color: white;
-    height: 6em;
-}

@@ -8,6 +8,8 @@ import { ProductsListComponent } from './products-list/products-list.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FiltreproduitperimeComponent } from './filtreproduitperime/filtreproduitperime.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ProductsListComponent,
     DetailProductComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FiltreproduitperimeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

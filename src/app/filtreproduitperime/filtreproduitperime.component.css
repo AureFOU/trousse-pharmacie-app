@@ -1,0 +1,10 @@
+.titleProduct{
+    font-size:3em;
+    color:#1b5e20;
+}
+
+@media (max-width: 1000px){
+    .titleProduct{
+        font-size:2em;
+    }
+}

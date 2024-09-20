@@ -1,16 +1,20 @@
 
-<h1 style="margin-left: 20%;color:#1b5e20">Composition trousse à pharmacie</h1>
+<h1 class="mt-4 mb-3 text-center" style="color:#1b5e20">Composition trousse à pharmacie</h1>
 
-<div class="inLine" *ngFor="let product of productList">
-    <div class="card small" (click)="goToProduct(product)">
-        <div class="card-image">
-            <img class="photo" [src]="product?.photo" alt="Photo du produit {{product.name}}">
-        </div>
-        <div class="card-content">
-            <!--<a routerLink="/detail/{{product.id}}"><span class="card-title">{{product.name}}</span></a>-->
-            <span class="card-title">{{product.name}}</span>
-            <span class="datepicker">Date d'expiration : {{product.expirationDate | date:'dd/MM/YYYY'}}</span>
-
-        </div>
+<div class="container mb-4">
+    <div class="row">
+        @for(product of productList(); track product.name){
+            <div class="col-md-3 mt-3">
+                <div class="card">
+                    <img class="card-image-top photo" [src]="product.photo" alt="Photo du produit {{product.name}}">
+                    <div class="card-body">
+                        <h3 class="card-title">{{product.name}}</h3>
+                        <h6 class="card-text datepicker">Date d'enregistrement : {{product.recordDate| date:'dd/MM/YYYY'}}</h6>
+                        <button class="btn btn-link text-decoration-none text-warning" [routerLink]="['/detail/',product.id]">
+                            DETAIL DU PRODUIT</button>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
 </div>
