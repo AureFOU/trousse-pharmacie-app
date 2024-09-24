@@ -9,6 +9,10 @@
     margin-bottom: 3%;
 }
 
+button:hover{
+    transform: scale(1.2);
+}
+
 @media (max-width: 1000px){
     .titleProduct{
         margin-top: 2%;
